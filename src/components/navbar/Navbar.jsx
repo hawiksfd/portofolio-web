@@ -2,9 +2,9 @@ import './navbar.scss'
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Navbar = () => {
+const Navbar = ({menuOpen, setMenuOpen}) => {
   return (
-    <div className='navbar'>
+    <div className={'navbar ' + (menuOpen && 'active')}>
       <div className="wrapper">
         <div className="left">
           <a href='#header' className='logo'>.HAWIKSFD</a>
@@ -18,7 +18,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="right">
-          kanan
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)} >
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
         </div>
       </div>
       

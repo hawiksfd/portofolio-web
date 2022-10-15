@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import Header from "./components/header/Header.jsx";
 import Navbar from './components/navbar/Navbar';
 import Portofolio from "./components/portofolio/Portofolio.jsx";
@@ -7,9 +8,11 @@ import Contact from './components/contact/Contact.jsx';
 import './app.scss';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className="app">
-      <Navbar/>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Header />
         <Portofolio />

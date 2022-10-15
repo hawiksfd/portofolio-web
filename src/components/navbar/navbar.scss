@@ -8,6 +8,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
+  transition: all 1s ease;
 
   .wrapper {
     padding: 15px 30px;
@@ -40,6 +41,52 @@
           font-weight: 400;
           text-decoration: none;
           color: inherit;
+        }
+      }
+    }
+    .right {
+      .hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: $mainColor;
+          transform-origin: left;
+          transition: all 1s ease;
+        }
+        .line1 {
+        }
+        .line2 {
+        }
+        .line3 {
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: lightcyan;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: lightcyan;
+          transform: rotate(45deg);
+          margin-left: 1px;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: lightcyan;
+          transform: rotate(-45deg);
+          margin-left: 1px;
         }
       }
     }
