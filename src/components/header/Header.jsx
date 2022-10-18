@@ -3,7 +3,21 @@ import './header.scss'
 const Header = () => {
   return (
     <div className='header' id='header'>
-      
+      <div className="left">
+        <div className="imgContainer">
+          <img src="assets/man.png" alt="" />
+        </div>
+      </div>
+      <div className="right">
+        <div className="wrapper">
+          <h2>Hi there, I'm</h2>
+          <h1>Mohammad Hawik Syaefuddin</h1>
+          <h3>Backend Developer</h3>
+        </div>
+        <a href="#portofolio">
+          <img src="assets/down.png" alt="" />
+        </a>
+      </div>
     </div>
   )
 }
