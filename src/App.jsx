@@ -5,6 +5,7 @@ import Portofolio from "./components/portofolio/Portofolio.jsx";
 import Works from "./components/works/Works.jsx";
 import Testimonials from "./components/testimonials/Testimonials.jsx";
 import Contact from './components/contact/Contact.jsx';
+import Menu from './components/menu/Menu';
 import './app.scss';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Header />
         <Portofolio />
