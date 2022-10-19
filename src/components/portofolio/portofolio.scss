@@ -15,19 +15,6 @@
     padding: 0;
     list-style: none;
     display: flex;
-
-    li {
-      font-size: 14px;
-      margin-right: 50px;
-      padding: 5px;
-      border-radius: 5px;
-      cursor: pointer;
-
-      &.active {
-        background-color: $mainColor;
-        color: lightcyan;
-      }
-    }
   }
 
   .container {
