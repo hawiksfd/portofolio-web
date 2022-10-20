@@ -1,7 +1,7 @@
 import './portofolio.scss'
 import PortoList from './PortoList';
 import { useState, useEffect } from 'react';
-import { featuredPorto, webPorto, mobilePorto } from '../../data.js'
+import { featuredPorto, webPorto, mobilePorto } from '../../dataPorto.js'
 
 const Portofolio = () => {
 
