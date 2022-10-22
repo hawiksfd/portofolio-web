@@ -7,7 +7,7 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
     <div className={'navbar ' + (menuOpen && 'active')}>
       <div className="wrapper">
         <div className="left">
-          <a href='#header' className='logo'>.HAWIKSFD</a>
+          <a href='http://localhost:3000' className='logo'>.HAWIKSFD</a>
           <div className="itemContainer">
             <ContactMailIcon className='icon'/>
             <a href='#contact' className='title'>mohhawik17@gmail.com</a>

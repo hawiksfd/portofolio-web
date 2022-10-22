@@ -19,7 +19,7 @@ const Works = () => {
         style={{ transform:`translateX(-${slider * 100}vw)` }}
       >
         {data.map((datas) =>(
-          <div className="container">
+          <div className="container" key={datas.id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">

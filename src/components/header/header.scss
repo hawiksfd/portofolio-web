@@ -1,14 +1,21 @@
+@import "../../global.scss";
+
 .header {
   background-color: whitesmoke;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
     overflow: hidden;
 
     .imgContainer {
-      width: 60vw;
-      height: 100vh;
+      width: 700px;
+      height: 700px;
       background-color: crimson;
       border-radius: 50%;
       display: flex;
@@ -16,9 +23,16 @@
       justify-content: center;
       float: right;
 
+      @include mobile {
+        align-items: flex-start;
+      }
+
       img {
-        height: 100%;
-        width: 80%;
+        height: 90%;
+
+        @include mobile {
+          height: 50%;
+        }
       }
     }
   }
@@ -35,15 +49,34 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        padding-left: 5px;
+        align-items: center;
+      }
+
       h1 {
+        width: max-content;
         font-size: 60px;
         margin: 10px 0;
+        padding: 0px 20px;
+        border-radius: 50%;
+        // text-shadow: 0px 0px 15px 0px $mainColor;
+        background-color: $mainColor;
+        color: lightcyan;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 20px;
+        }
       }
     }
 

@@ -10,8 +10,8 @@ const Header = () => {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi there, I'm</h2>
-          <h1>Mohammad Hawik Syaefuddin</h1>
+          <h2>Hello, I'm</h2>
+          <h1>Hawik</h1>
           <h3>Backend Developer</h3>
         </div>
         <a href="#portofolio">
