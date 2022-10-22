@@ -1,3 +1,87 @@
+@import "../../global.scss";
+
 .testimonials {
-  background-color: lightcoral;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+      width: 250px;
+      height: 70%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px 0px $mainColor;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: lightcyan;
+      transition: all 0.5s ease;
+
+      &.featured {
+        width: 300px;
+        height: 75%;
+        margin: 0 30px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          &.left,
+          &.right {
+            height: 25px;
+          }
+
+          &.user {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0px 30px;
+          }
+        }
+      }
+
+      .center {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          margin-bottom: 5px;
+        }
+
+        h4 {
+          padding: 5px;
+          background-color: whitesmoke;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
 }
